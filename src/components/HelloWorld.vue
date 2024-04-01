@@ -1,4 +1,6 @@
 <script setup>
+import CountNum from "@/components/CountNum.vue";
+
 defineProps({
   msg: {
     type: String,
@@ -13,7 +15,9 @@ defineProps({
     <h3>
       You’ve successfully created a project with
       <a href="https://vitejs.dev/" target="_blank" rel="noopener">Vite</a> +
-      <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>.
+      <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>. +
+      <CountNum />
+      <router-link to="/home">home</router-link>
     </h3>
   </div>
 </template>
